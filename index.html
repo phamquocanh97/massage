@@ -11,6 +11,33 @@
     <script src="https://connect.facebook.net/signals/config/2659228140875025?v=2.9.102&amp;r=stable" async=""></script>
     <script src="https://connect.facebook.net/signals/config/821183025813462?v=2.9.102&amp;r=stable" async=""></script>
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1841656572899944');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1841656572899944&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <script type="text/javascript">
         window.ladi_viewport = function() {
             var screen_width = window.ladi_screen_width || window.screen.width;
@@ -8206,6 +8233,7 @@
             }).then(
                 response => response.json()
             ).then((html) => {
+                fbq('track', 'CompleteRegistration');
                 // you can put any JS code here
                 alert('Cảm ơn a/c đã đặt hàng , sẽ có nhân viên bên shop gọi xác nhận đơn cho mình . a/c vui lòng để ý điện thoại ạ ');
                 document.getElementById("sheetdb-form").reset();
