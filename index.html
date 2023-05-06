@@ -8233,7 +8233,10 @@
             }).then(
                 response => response.json()
             ).then((html) => {
-                fbq('track', 'CompleteRegistration');
+                fbq('track', 'CompleteRegistration', {
+                    currency: "USD",
+                    value: 48.00
+                });
                 // you can put any JS code here
                 alert('Cảm ơn a/c đã đặt hàng , sẽ có nhân viên bên shop gọi xác nhận đơn cho mình . a/c vui lòng để ý điện thoại ạ ');
                 document.getElementById("sheetdb-form").reset();
