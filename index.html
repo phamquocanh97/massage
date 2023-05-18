@@ -12,17 +12,27 @@
     <script src="https://connect.facebook.net/signals/config/821183025813462?v=2.9.102&amp;r=stable" async=""></script>
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '3126187911026733');
-    fbq('track', 'PageView');
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3126187911026733');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=3126187911026733&ev=PageView&noscript=1"
@@ -8255,7 +8265,8 @@
                     value: 48.00
                 });
                 // you can put any JS code here
-                alert('Cảm ơn a/c đã đặt hàng , sẽ có nhân viên bên shop gọi xác nhận đơn cho mình . a/c vui lòng để ý điện thoại ạ ');
+
+                alert('Cảm ơn a/c đã đặt hàng , a/c vui lòng xem lại thông tin bên dưới chính xác và sẽ có nhân viên bên shop gọi xác nhận đơn cho mình. a/c vui lòng để ý điện thoại ạ \nHọ Tên: ' + document.getElementById("name").value + "\nSố Điện Thoại: " + document.getElementById("sdt").value + "\nĐịa Chỉ: " + document.getElementById("address").value);
                 document.getElementById("sheetdb-form").reset();
             });
         });
