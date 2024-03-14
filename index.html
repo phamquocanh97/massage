@@ -12,6 +12,12 @@
     <script src="https://connect.facebook.net/signals/config/821183025813462?v=2.9.102&amp;r=stable" async=""></script>
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <meta id="viewport" name="viewport" content="width=420, user-scalable=no, initial-scale=1.7976190476190477, minimum-scale=1.7976190476190477, maximum-scale=1.7976190476190477">
+    <script src="https://embed.tawk.to/_s/v4/app/65e94674919/js/twk-main.js" charset="UTF-8" crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/65e94674919/js/twk-vendor.js" charset="UTF-8" crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/65e94674919/js/twk-chunk-vendors.js" charset="UTF-8" crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/65e94674919/js/twk-chunk-common.js" charset="UTF-8" crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/65e94674919/js/twk-runtime.js" charset="UTF-8" crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/65e94674919/js/twk-app.js" charset="UTF-8" crossorigin="*"></script>
     <link rel="canonical" href="https://www.samha-store.com/massage_co">
     <meta property="og:url" content="https://www.samha-store.com/massage_co">
     <meta property="og:title" content="MÁY MASSAGE CỔ VAI GÁY  SKV  NHẬP KHẨU ĐỨC">
@@ -9997,7 +10003,7 @@
                 </div>
                 <div id="GROUP238" class="ladi-element">
                     <div class="ladi-group">
-                        <div id="COUNTDOWN239" class="ladi-element" data-type="countdown" data-minute="60" data-date-start="0" data-date-end="1710407588959">
+                        <div id="COUNTDOWN239" class="ladi-element" data-type="countdown" data-minute="60" data-date-start="0" data-date-end="1710411205229">
                             <div class="ladi-countdown">
                                 <div id="COUNTDOWN_ITEM240" class="ladi-element" data-item-type="day">
                                     <div class="ladi-countdown-background"></div>
@@ -10116,7 +10122,7 @@
                                 <div id="BOX280" class="ladi-element">
                                     <div class="ladi-box ladi-transition"></div>
                                 </div>
-                                <div id="COUNTDOWN281" class="ladi-element" data-type="countdown" data-minute="60" data-date-start="0" data-date-end="1710407588959">
+                                <div id="COUNTDOWN281" class="ladi-element" data-type="countdown" data-minute="60" data-date-start="0" data-date-end="1710411205229">
                                     <div class="ladi-countdown">
                                         <div id="COUNTDOWN_ITEM282" class="ladi-element" data-item-type="day">
                                             <div class="ladi-countdown-background"></div>
@@ -10128,11 +10134,11 @@
                                         </div>
                                         <div id="COUNTDOWN_ITEM284" class="ladi-element" data-item-type="minute">
                                             <div class="ladi-countdown-background"></div>
-                                            <div class="ladi-countdown-text"><span>15</span></div>
+                                            <div class="ladi-countdown-text"><span>00</span></div>
                                         </div>
                                         <div id="COUNTDOWN_ITEM285" class="ladi-element" data-item-type="seconds">
                                             <div class="ladi-countdown-background"></div>
-                                            <div class="ladi-countdown-text"><span>24</span></div>
+                                            <div class="ladi-countdown-text"><span>00</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -10195,30 +10201,7 @@
             </div>
         </div>
     </div>
-    <div id="backdrop-popup" class="backdrop-popup"></div>
-    <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
-    <div id="lightbox-screen" class="lightbox-screen"></div>
-    <script>
-        var form = document.getElementById('sheetdb-form');
-        form.addEventListener("submit", e => {
-            e.preventDefault();
-            fetch(form.action, {
-                method: "POST",
-                body: new FormData(document.getElementById("sheetdb-form")),
-            }).then(
-                response => response.json()
-            ).then((html) => {
-                fbq('track', 'CompleteRegistration', {
-                    currency: "USD",
-                    value: 48.00
-                });
-                // you can put any JS code here
 
-                alert('Cảm ơn a/c đã đặt hàng, nhân viên bên shop sẽ gọi xác nhận đơn cho mình. A/c vui lòng để ý điện thoại ạ!');
-                document.getElementById("sheetdb-form").reset();
-            });
-        });
-    </script>
     <script id="script_lazyload" type="text/javascript">
         window.lazyload_run = function(dom, is_first, check_dom_rect) {
             if (check_dom_rect && (document.body.clientWidth <= 0 || document.body.clientheight <= 0)) {
@@ -10274,6 +10257,28 @@
         };
         window.lazyload_run(document, true, true);
     </script>
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                fbq('track', 'CompleteRegistration', {
+                    currency: "USD",
+                    value: 48.00
+                });
+                // you can put any JS code here
+
+                alert('Cảm ơn a/c đã đặt hàng, nhân viên bên shop sẽ gọi xác nhận đơn cho mình. A/c vui lòng để ý điện thoại ạ!');
+                document.getElementById("sheetdb-form").reset();
+            });
+        });
+    </script>
+
     <!--[if lt IE 9]><script src="https://w.ladicdn.com/v2/source/html5shiv.min.js?v=1681878138028"></script><script src="https://w.ladicdn.com/v2/source/respond.min.js?v=1681878138028"></script><![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Hepta Slab:bold,regular|Roboto Slab:bold,regular|Roboto:bold,regular&amp;display=swap" rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -10628,6 +10633,7 @@
                 window.LadiPageScript.runtime.mobile_width = 420;
                 window.LadiPageScript.runtime.formdata = true;
                 window.LadiPageScript.runtime.tracking_button_click = true;
+                window.LadiPageScript.runtime.publish_time = 1709870791100;
                 window.LadiPageScript.runtime.lang = "vi";
                 window.LadiPageScript.run(true);
                 window.LadiPageScript.runEventScroll();
@@ -10636,6 +10642,15 @@
         })();
     </script>
     <script type="text/javascript" defer="" src="https://w.ladicdn.com/v2/source/ladipage.formdata.min.js?v=1681878138028"></script>
+    <div id="trackheader" style="overflow:hidden;width:0;height:0;padding:0;margin:0;position:relative;"><img width="1" height="1" src="https://log.adtimaserver.vn/ptrck/log?pId=7056840457216708608&amp;eId=1393893465614933723&amp;et=3&amp;url=https%3A%2F%2Fwww.kingspeed.online%2Fmay-massage-co%3Ffbclid%3DIwAR3QUjfqeb6vUkMb3-Bg3yzKIqADNsQfUdT3wiy4AmTXV11SKGkwODvKgTs&amp;value=&amp;adtid=null&amp;curl=https%3A%2F%2Fwww.kingspeed.online%2Fmay-massage-co%3Ffbclid%3DIwAR3QUjfqeb6vUkMb3-Bg3yzKIqADNsQfUdT3wiy4AmTXV11SKGkwODvKgTs&amp;uid=&amp;ver=1.1.29&amp;ref=&amp;estd=ViewContent&amp;atmrk=0.9686490564285597"
+            style="border:0;overflow:hidden;position:absolute;width:1px;height:1px;" z2-type="stde"></div>
+    <script async="" charset="UTF-8" src="https://embed.tawk.to/_s/v4/app/65e94674919/languages/vi.js"></script>
+    <div id="gd95nlt397781710407715872" class="widget-visible"><iframe src="about:blank" frameborder="0" scrolling="no" width="67px" height="64px" style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:calc((50% - 30px) + 0px) !important; right:20px !important; bottom:auto !important; left:auto !important; position:fixed !important; border:0 !important; min-height:64px !important; min-width:67px !important; max-height:64px !important; max-width:67px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:67px !important; height:64px !important; display:block !important; z-index:1000001 !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="h478ru9m86h1710407715902" class="" title="chat widget"></iframe><iframe src="about:blank" frameborder="0" scrolling="no" width="100%" height="100%" style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:0px !important; right:0px !important; bottom:0px !important; left:0px !important; position:fixed !important; border:0 !important; min-height:100% !important; min-width:100% !important; max-height:100% !important; max-width:100% !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:none !important; -webkit-transform:none !important; -ms-transform:none !important; width:100% !important; height:100% !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:0px !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="pd50hmaqoha81710407715919" class="" title="chat widget"></iframe><iframe src="about:blank" frameborder="0" scrolling="no" width="320px" height="145px" style="outline:none !important; visibility:visible !important; resize:none !important; box-shadow:none !important; overflow:visible !important; background:none !important; opacity:1 !important; filter:alpha(opacity=100) !important; -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important; -mz-opacity:1 !important; -khtml-opacity:1 !important; top:calc(50% + 0px); right:100px !important; bottom:auto !important; left:auto !important; position:fixed !important; border:0 !important; min-height:145px !important; min-width:320px !important; max-height:145px !important; max-width:320px !important; padding:0 !important; margin:0 !important; -moz-transition-property:none !important; -webkit-transition-property:none !important; -o-transition-property:none !important; transition-property:none !important; transform:translate(0, -50%) !important; -webkit-transform:translate(0, -50%) !important; -ms-transform:none !important; width:320px !important; height:145px !important; display:none !important; z-index:auto !important; background-color:transparent !important; cursor:none !important; float:none !important; border-radius:unset !important; pointer-events:auto !important; clip:auto !important; color-scheme:light !important;"
+            id="egmdig26fco81710407715911" class="" title="chat widget"></iframe>
+        <div id="chat-bubble"></div>
+    </div>
 </body>
 
 </html>
