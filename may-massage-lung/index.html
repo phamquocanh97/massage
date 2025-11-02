@@ -89,6 +89,33 @@
     <link rel="preconnect" href="https://api.sales.ldpform.net/" crossorigin="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Roboto+Mono:wght@400;700&amp;family=Roboto:wght@400;700&amp;family=Roboto+Slab:wght@400;700&amp;display=swap" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
     <link rel="preload" href="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1750843058764" as="script">
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1064114405778751');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1064114405778751&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
     <style id="style_ladi" type="text/css">
         a,
         abbr,
@@ -348,74 +375,8 @@
         }
         
         .ladipage-message {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 10000000000;
-            background: rgba(0, 0, 0, .3)
-        }
-        
-        .ladipage-message .ladipage-message-box {
-            width: 400px;
-            max-width: calc(100% - 50px);
-            height: 160px;
-            border: 1px solid rgba(0, 0, 0, .3);
-            background-color: #fff;
-            position: fixed;
-            top: calc(50% - 155px);
-            left: 0;
-            right: 0;
-            margin: auto;
-            border-radius: 10px
-        }
-        
-        .ladipage-message .ladipage-message-box span {
-            display: block;
-            background-color: rgba(6, 21, 40, .05);
-            color: #000;
-            padding: 12px 15px;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 16px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px
-        }
-        
-        .ladipage-message .ladipage-message-box .ladipage-message-text {
-            display: -webkit-box;
-            font-size: 14px;
-            padding: 0 20px;
-            margin-top: 16px;
-            line-height: 20px;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            word-break: break-word
-        }
-        
-        .ladipage-message .ladipage-message-box .ladipage-message-close {
-            display: block;
-            position: absolute;
-            right: 15px;
-            bottom: 10px;
-            margin: 0 auto;
-            padding: 10px 0;
-            border: none;
-            width: 80px;
-            text-transform: uppercase;
-            text-align: center;
-            color: #000;
-            background-color: #e6e6e6;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            line-height: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            outline: 0
+            display: none !important;
+            visibility: hidden !important;
         }
         
         .lightbox-screen {
@@ -4105,12 +4066,6 @@
         #SECTION29>.ladi-section-background,
         #BOX27>.ladi-box,
         #BOX21>.ladi-box,
-        #FORM2 .ladi-form [data-form-checkout-item="product"] .ladi-form-checkout-payment-check.multiple.checked:before,
-        #FORM2 .ladi-form [data-form-checkout-item="product"] .ladi-form-checkout-payment-check:not(.multiple).checked:before,
-        #FORM2 .ladi-form [data-form-checkout-item="payment"] .ladi-form-checkout-payment-check.checked:before,
-        #FORM2 .ladi-form [data-form-checkout-item="fee_shipping"] .ladi-form-checkout-payment-check.checked:before,
-        #FORM2 .ladi-form-checkout-payment-quantity .up:before,
-        #FORM2 .ladi-form-checkout-payment-quantity .down:before,
         #FORM2 [data-form-checkout-item="payment"] .ladi-form-item .ladi-form-checkout-payment-content div:before {
             background-color: rgb(255, 255, 255);
         }
@@ -6309,7 +6264,7 @@
         }
         
         #SECTION36 {
-            height: 911px;
+            height: 790px;
         }
         
         #HEADLINE163,
@@ -6319,7 +6274,7 @@
         }
         
         #HEADLINE163 {
-            top: 642.09px;
+            top: 520.09px;
             left: 11.7715px;
         }
         
@@ -6332,7 +6287,7 @@
         }
         
         #HEADLINE164 {
-            top: 702.09px;
+            top: 570.09px;
             left: 11.7715px;
         }
         
@@ -6343,7 +6298,7 @@
         }
         
         #IMAGE115 {
-            top: 765.09px;
+            top: 640.09px;
             left: 108.772px;
         }
         
@@ -6605,7 +6560,7 @@
         }
         
         #HEADLINE170 {
-            top: 298.09px;
+            top: 170.09px;
             left: 49.836px;
         }
         
@@ -6619,7 +6574,7 @@
         
         #HEADLINE171 {
             width: 390px;
-            top: 335.09px;
+            top: 210.09px;
             left: 49.836px;
         }
         
@@ -6662,19 +6617,19 @@
         }
         
         #SHAPE118 {
-            top: 297.09px;
+            top: 170.09px;
             left: 19px;
         }
         
         #SHAPE119 {
-            top: 333.09px;
+            top: 210.09px;
             left: 19px;
         }
         
         #SHAPE109 {
             width: 80px;
             height: 80px;
-            top: 539.09px;
+            top: 430.09px;
             left: 49.8365px;
         }
         
@@ -6683,12 +6638,12 @@
         }
         
         #HEADLINE158 {
-            top: 374.09px;
+            top: 250.09px;
             left: 49.8365px;
         }
         
         #HEADLINE159 {
-            top: 439.09px;
+            top: 320.09px;
             left: 49.836px;
         }
         
@@ -6701,13 +6656,13 @@
         
         #HEADLINE160 {
             width: 346px;
-            top: 470.09px;
+            top: 350.09px;
             left: 49.836px;
         }
         
         #HEADLINE161 {
             width: 256px;
-            top: 543.09px;
+            top: 430.09px;
             left: 135.836px;
         }
         
@@ -6720,7 +6675,7 @@
         
         #HEADLINE162 {
             width: 296px;
-            top: 575.09px;
+            top: 460.09px;
             left: 129.837px;
         }
         
@@ -6731,12 +6686,12 @@
         }
         
         #SHAPE120 {
-            top: 374.09px;
+            top: 250.09px;
             left: 19px;
         }
         
         #SHAPE121 {
-            top: 468.09px;
+            top: 350.09px;
             left: 19px;
         }
     </style>
@@ -8259,8 +8214,8 @@
                                 <div class="ladi-form-item-background"></div>
                                 <div class="ladi-form-item ladi-form-checkbox ladi-form-checkbox-vertical">
                                     <div class="ladi-form-checkbox-box-item">
-                                        <div class="ladi-form-checkbox-item"><input tabindex="4" id="vehicle1" name="data[Ghi chú]" type="checkbox" value="Mua 1 máy giá 1.850k + FreeShip"><span data-checked="false">Mua 1 máy giá 1.850k + FreeShip</span></div>
-                                        <div class="ladi-form-checkbox-item"><input tabindex="4" id="vehicle2" name="data[Ghi chú]" type="checkbox" value="Mua 2 máy   Giá 3.500k + Freeship"><span data-checked="false">Mua 2 máy   Giá 3.500k + Freeship</span></div>
+                                        <div class="ladi-form-checkbox-item"><input tabindex="4" id="vehicle1" name="data[Ghi chú]" type="checkbox" value="Mua 1 máy giá 1.650k + FreeShip"><span data-checked="false">Mua 1 máy giá 1.650k + FreeShip</span></div>
+                                        <div class="ladi-form-checkbox-item"><input tabindex="4" id="vehicle2" name="data[Ghi chú]" type="checkbox" value="Mua 2 máy   Giá 3.100k + Freeship"><span data-checked="false">Mua 2 máy   Giá 3.100k + Freeship</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -8270,7 +8225,7 @@
                         </div><button id="button1" type="submit" class="ladi-hidden"></button></form>
                 </div>
                 <div id="HEADLINE142" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">CHỈ CÒN <span style="color: rgb(255, 4, 4);">6</span><span style="color: rgb(255, 13, 13);">&nbsp;</span>NGƯỜI ĐƯỢC MUA VỚI GIÁ <span style="color: rgb(255, 1, 1);">1.850.000Đ</span><span style="color: rgb(194, 0, 0);">&nbsp;</span></h3>
+                    <h3 class="ladi-headline ladi-transition">CHỈ CÒN <span style="color: rgb(255, 4, 4);">6</span><span style="color: rgb(255, 13, 13);">&nbsp;</span>NGƯỜI ĐƯỢC MUA VỚI GIÁ <span style="color: rgb(255, 1, 1);">1.650.000Đ</span><span style="color: rgb(194, 0, 0);">&nbsp;</span></h3>
                 </div>
                 <div id="HEADLINE143" class="ladi-element">
                     <h3 class="ladi-headline ladi-transition">*Lưu ý: Quý khách vui lòng điền đúng SĐT và địa chỉ cụ thể để nhận được hàng nhanh chóng hơn!</h3>
@@ -8419,7 +8374,7 @@
                     </div>
                 </div>
                 <div id="HEADLINE166" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">Địa chỉ: <span style="font-weight: normal;">29 Bờ Bao - Tân Thắng - Phường Sơn Kỳ - Quận Tân Phú - TP.Hồ Chí Minh.</span></h3>
+                    <h3 class="ladi-headline ladi-transition">Địa chỉ: <span style="font-weight: normal;">Khu Công Nghiệp Đài Tư - Long Biên - Hà Nội</span></h3>
                 </div>
                 <div id="HEADLINE167" class="ladi-element">
                     <h3 class="ladi-headline ladi-transition">© 2015 Công ty cổ phần nhập khẩu gia dụng AZUMA<br></h3>
@@ -8427,25 +8382,25 @@
                 <div id="HEADLINE168" class="ladi-element">
                     <h3 class="ladi-headline ladi-transition">VĂN PHÒNG:<br></h3>
                 </div>
-                <div id="HEADLINE169" class="ladi-element">
+                <div id="HEADLINE169" class="ladi-element" style="display: none;">
                     <h3 class="ladi-headline ladi-transition"><span style="font-weight: bold;">Chi nhánh 2:</span> Số 36 - Hoàng Hoa Thám - Tân Chính - Thanh Khê - Đà Nẵng</h3>
                 </div>
                 <div id="HEADLINE170" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">Hotline: 0963.663.462<br></h3>
+                    <h3 class="ladi-headline ladi-transition">Hotline: 0963.500.241<br></h3>
                 </div>
                 <a href="http://www.linhdongho.com/" target="_blank" id="HEADLINE171" class="ladi-element" data-replace-href="http://www.linhdongho.com/">
                     <h3 class="ladi-headline ladi-transition">Website:facebook.com/azumavietnam<br></h3>
                 </a>
-                <div id="HEADLINE172" class="ladi-element">
+                <div id="HEADLINE172" class="ladi-element" style="display: none;">
                     <h3 class="ladi-headline ladi-transition"><span style="font-weight: bold;">Chi nhánh 3:</span> Số 180 Nguyễn Chánh - Yên Hòa - Cầu Giấy - Hà Nội</h3>
                 </div>
                 <div id="SHAPE115" class="ladi-element">
                     <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1664 1896.08" class="" fill="rgba(250, 151, 0, 1)"><use xlink:href="#shape_GEqGTqqXWR"></use></svg></div>
                 </div>
-                <div id="SHAPE116" class="ladi-element">
+                <div id="SHAPE116" class="ladi-element" style="display: none;">
                     <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1664 1896.08" class="" fill="rgba(250, 151, 0, 1)"><use xlink:href="#shape_GEqGTqqXWR"></use></svg></div>
                 </div>
-                <div id="SHAPE117" class="ladi-element">
+                <div id="SHAPE117" class="ladi-element" style="display: none;">
                     <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1664 1896.08" class="" fill="rgba(250, 151, 0, 1)"><use xlink:href="#shape_GEqGTqqXWR"></use></svg></div>
                 </div>
                 <div id="SHAPE118" class="ladi-element">
@@ -8460,11 +8415,12 @@
                 <div id="HEADLINE158" class="ladi-element">
                     <h3 class="ladi-headline ladi-transition">Giấy chứng nhận đăng ký kinh doanh:<br>0306600239<br></h3>
                 </div>
+
                 <div id="HEADLINE159" class="ladi-element">
                     <h3 class="ladi-headline ladi-transition">TRỤ SỞ CHÍNH:</h3>
                 </div>
                 <div id="HEADLINE160" class="ladi-element">
-                    <h3 class="ladi-headline ladi-transition">Address: UOB Plaza, 80 Raffles Place, Raffles Place and Vicinity, Singapore<br></h3>
+                    <h3 class="ladi-headline ladi-transition">Address: Khu Công Nghiệp Đài Tư - Long Biên - Hà Nội<br></h3>
                 </div>
                 <div id="HEADLINE161" class="ladi-element">
                     <h3 class="ladi-headline ladi-transition">AN TOÀN GIAO DỊCH</h3>
@@ -8479,6 +8435,7 @@
                     <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1664 1896.08" class="" fill="rgba(250, 151, 0, 1)"><use xlink:href="#shape_GEqGTqqXWR"></use></svg></div>
                 </div>
             </div>
+
         </div>
     </div>
     <div id="backdrop-popup" class="backdrop-popup"></div>
@@ -8539,6 +8496,35 @@
             return dom;
         };
         window.lazyload_run(document, true, true);
+    </script>
+    <script>
+        var input = document.getElementById("button1");
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            var name = document.getElementById('name').value;
+            var sdt = document.getElementById("sdt").value;
+            var diachi = document.getElementById("address").value;
+            input.setAttribute('disabled', true);
+            e.preventDefault();
+            alert("Quý Khách Vui Lòng Kiểm Tra Lại Thông Tin!\n" + "Tên: " + name + "\nSố Điện Thoại: " + sdt + "\nĐịa Chỉ: " + diachi + "\nQuý Khách Vui Lòng Ấn 'OK' Để Xác Nhận Thông Tin!");
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+
+            ).then((html) => {
+                fbq('track', 'Purchase', {
+                    currency: "USD",
+                    value: 65.00
+                });
+                // you can put any JS code here
+
+                alert('Cảm ơn a/c đã đặt hàng, nhân viên bên shop sẽ gọi xác nhận đơn cho mình. A/c vui lòng để ý điện thoại ạ!');
+                document.getElementById("sheetdb-form").reset();
+                input.removeAttribute('disabled');
+            });
+        });
     </script>
     <!--[if lt IE 9]><script src="https://w.ladicdn.com/v5/source/html5shiv.min.js?v=1750843058764"></script><script src="https://w.ladicdn.com/v5/source/respond.min.js?v=1750843058764"></script><![endif]-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Roboto+Mono:wght@400;700&amp;family=Roboto:wght@400;700&amp;family=Roboto+Slab:wght@400;700&amp;display=swap" rel="stylesheet" type="text/css">
@@ -8639,35 +8625,7 @@
             }
         }
     </style>
-    <script>
-        var input = document.getElementById("button1");
-        var form = document.getElementById('sheetdb-form');
-        form.addEventListener("submit", e => {
-            var name = document.getElementById('name').value;
-            var sdt = document.getElementById("sdt").value;
-            var diachi = document.getElementById("address").value;
-            input.setAttribute('disabled', true);
-            e.preventDefault();
-            alert("Quý Khách Vui Lòng Kiểm Tra Lại Thông Tin!\n" + "Tên: " + name + "\nSố Điện Thoại: " + sdt + "\nĐịa Chỉ: " + diachi + "\nQuý Khách Vui Lòng Ấn 'OK' Để Xác Nhận Thông Tin!");
-            fetch(form.action, {
-                method: "POST",
-                body: new FormData(document.getElementById("sheetdb-form")),
-            }).then(
-                response => response.json()
 
-            ).then((html) => {
-                fbq('track', 'CompleteRegistration', {
-                    currency: "USD",
-                    value: 25.00
-                });
-                // you can put any JS code here
-
-                alert('Cảm ơn a/c đã đặt hàng, nhân viên bên shop sẽ gọi xác nhận đơn cho mình. A/c vui lòng để ý điện thoại ạ!');
-                document.getElementById("sheetdb-form").reset();
-                input.removeAttribute('disabled');
-            });
-        });
-    </script>
     <script src="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1750843058764" type="text/javascript"></script>
     <script id="script_event_data" type="application/json">
         {
@@ -8725,12 +8683,12 @@
                 "bQ": 4
             },
             "FORM2": {
-                "option.use_data_leads": true,
+
                 "option.dynamic_form_config": "&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn để lại thông tin, Bên Shop Sẽ liên hệ với bạn xác nhận sớm nhất&#34;,&#34;type&#34;:&#34;form_show_popup_default&#34;,&#34;no_delete&#34;:true&#125;]&#125;",
                 "a": "form",
-                "bP": "6854d64a1e87b40012b26b6e",
+                "bP": "",
                 "bM": true,
-                "bF": "CompleteRegistration",
+                "bF": "Purchase",
                 "bA": true,
                 "by": true,
                 "bx": true,
