@@ -10089,6 +10089,7 @@ src="https://www.facebook.com/tr?id=1064114405778751&ev=PageView&noscript=1"
             input.setAttribute('disabled', true);
             e.preventDefault();
             alert("Quý Khách Vui Lòng Kiểm Tra Lại Thông Tin!\n" + "Tên: " + name + "\nSố Điện Thoại: " + sdt + "\nĐịa Chỉ: " + diachi + "\nQuý Khách Vui Lòng Ấn 'OK' Để Xác Nhận Thông Tin!");
+            alert('Cảm ơn a/c đã đặt hàng, nhân viên bên shop sẽ gọi xác nhận đơn cho mình. A/c vui lòng để ý điện thoại ạ!');
             fetch(form.action, {
                 method: "POST",
                 body: new FormData(document.getElementById("sheetdb-form")),
@@ -10096,13 +10097,14 @@ src="https://www.facebook.com/tr?id=1064114405778751&ev=PageView&noscript=1"
                 response => response.json()
 
             ).then((html) => {
+                
                 fbq('track', 'CompleteRegistration', {
                     currency: "USD",
                     value: 25.00
                 });
                 // you can put any JS code here
 
-                alert('Cảm ơn a/c đã đặt hàng, nhân viên bên shop sẽ gọi xác nhận đơn cho mình. A/c vui lòng để ý điện thoại ạ!');
+                
                 document.getElementById("sheetdb-form").reset();
                 input.removeAttribute('disabled');
             });
