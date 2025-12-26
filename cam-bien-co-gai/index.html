@@ -34,6 +34,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Muli:wght@400;700&amp;family=Yeseva+One&amp;family=Source+Sans+Pro:wght@400;700&amp;family=Chonburi&amp;family=Anton&amp;family=Quicksand:wght@400;700&amp;family=Alfa+Slab+One&amp;display=swap"
         as="style" onload="this.onload = null; this.rel = 'stylesheet';">
     <link rel="preload" href="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1761123387322" as="script">
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1779834346051811');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1779834346051811&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
     <style id="style_ladi" type="text/css">
         a,
         abbr,
@@ -5635,15 +5662,26 @@
                 mode: "no-cors"
 
 
-            })
-            Swal.fire({
-                icon: "success",
-                title: "Đặt hàng thành công",
-                text: "Chúng tôi sẽ liên hệ sớm",
-                confirmButtonText: "OK"
-            });
+            }).then(() => {
 
-            form.reset();
+                if (typeof fbq === "function") {
+                    fbq('track', 'CompleteRegistration', {
+                        currency: "USD",
+                        value: 16.00
+                    });
+                }
+
+
+                Swal.fire({
+
+                    icon: "success",
+                    title: "Đặt hàng thành công",
+                    text: "Chúng tôi sẽ liên hệ sớm",
+                    confirmButtonText: "OK"
+                });
+
+                form.reset();
+            });
         });
     </script>
 
